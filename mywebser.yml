@@ -18,4 +18,15 @@
     when: ansible_os_family=="debian"
 
 
+  - name: i want to install webserver on redhat
+    yum:
+     name: httpd
+     state: present 
+    when: ansible_os_family=="redhat"
+  - name: i want start httpd server on redhat 
+    yum: 
+     name: httpd
+     state: started
+    when: ansible_os_family=="redhat"
+
 
