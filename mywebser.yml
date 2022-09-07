@@ -22,11 +22,11 @@
     yum:
      name: httpd
      state: present 
-    when: ansible_os_family=="redhat"
+    when: ansible_os_family=="RedHat"
   - name: i want start httpd server on redhat 
     yum: 
      name: httpd
      state: started
-    when: ansible_os_family=="redhat"
+    when: ansible_os_family=="RedHat"
 
 
