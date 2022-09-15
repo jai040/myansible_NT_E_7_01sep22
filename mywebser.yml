@@ -1,4 +1,4 @@
----
+---   
 - hosts: mywebserver
   become: yes
   gather_facts: yes
